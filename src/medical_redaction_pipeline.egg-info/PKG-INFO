@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: medical-redaction-pipeline
+Version: 0.1.0
+Summary: Validation, hybrid PII detection, irreversible PDF redaction/masking, and verification
+Requires-Python: >=3.11
+Requires-Dist: PyMuPDF>=1.24
+Requires-Dist: pypdf>=5
+Requires-Dist: pydantic>=2
+Requires-Dist: Pillow>=10
+Requires-Dist: pytesseract>=0.3.13
+Provides-Extra: ai
+Requires-Dist: anthropic>=0.40; extra == "ai"
+Provides-Extra: azure
+Requires-Dist: azure-ai-documentintelligence>=1.0.0; extra == "azure"
+Requires-Dist: azure-ai-textanalytics>=5.3.0; extra == "azure"
+Requires-Dist: azure-identity>=1.19.0; extra == "azure"
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"

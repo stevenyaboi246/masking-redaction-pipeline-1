@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "job_id": "job_5e204b7e411b",
+  "completed_at": "2026-09-01T12:50:03.192116+00:00",
+  "source_sha256": "7b10a0c721bd7839860e274d0c94a916eddc35bd493a52f5cc387c88f05236ab",
+  "output_sha256": "3f733470e47477c9d36862ea2630054f196b870427a15556e591171a32bb9a13",
+  "validation": {
+    "path": "examples/synthetic-chart.pdf",
+    "size_bytes": 1883,
+    "page_count": 1,
+    "encrypted": false,
+    "has_metadata": true,
+    "warnings": []
+  },
+  "extraction": [
+    {
+      "page": 1,
+      "engine": "text_layer",
+      "reliability": 1.0
+    }
+  ],
+  "counts": {
+    "found": 5,
+    "masked": 2,
+    "redacted": 2,
+    "kept": 1
+  },
+  "spans": [
+    {
+      "entity_type": "mrn",
+      "page": 1,
+      "start": 29,
+      "end": 36,
+      "boxes": [
+        [
+          105.99600219726562,
+          107.0999984741211,
+          152.69998168945312,
+          123.58799743652344
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[MRN-1]"
+    },
+    {
+      "entity_type": "date_of_birth",
+      "page": 1,
+      "start": 42,
+      "end": 52,
+      "boxes": [
+        [
+          104.67599487304688,
+          137.10000610351562,
+          164.72396850585938,
+          153.58799743652344
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DOB]"
+    },
+    {
+      "entity_type": "date_of_service",
+      "page": 1,
+      "start": 70,
+      "end": 80,
+      "boxes": [
+        [
+          158.69998168945312,
+          167.10000610351562,
+          218.74795532226562,
+          183.58799743652344
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "keep",
+      "replacement": null
+    },
+    {
+      "entity_type": "contact",
+      "page": 1,
+      "start": 88,
+      "end": 102,
+      "boxes": [
+        [
+          113.36398315429688,
+          197.10000610351562,
+          141.37197875976562,
+          213.58799743652344
+        ],
+        [
+          144.70797729492188,
+          197.10000610351562,
+          195.407958984375,
+          213.58799743652344
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "redact",
+      "replacement": null
+    },
+    {
+      "entity_type": "ssn",
+      "page": 1,
+      "start": 108,
+      "end": 119,
+      "boxes": [
+        [
+          103.343994140625,
+          227.10000610351562,
+          171.38397216796875,
+          243.58799743652344
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "redact",
+      "replacement": null
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "remaining_rule_spans": 0
+  }
+}

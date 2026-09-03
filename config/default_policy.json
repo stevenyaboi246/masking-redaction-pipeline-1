@@ -1,0 +1,26 @@
+{
+  "min_confidence": 0.30,
+  "verify": true,
+  "fail_closed": true,
+  "entities": {
+    "patient_name": {"mode": "mask", "placeholder": "[PATIENT_NAME]"},
+    "physician_name": {"mode": "mask", "placeholder": "[PHYSICIAN]"},
+    "person_name": {"mode": "mask", "placeholder": "[PERSON_NAME]"},
+    "facility_name": {"mode": "mask", "placeholder": "[FACILITY]"},
+    "employer": {"mode": "mask", "placeholder": "[EMPLOYER]"},
+    "mrn": {"mode": "mask", "placeholder": "[MRN-1]"},
+    "member_id": {"mode": "mask", "placeholder": "[MEMBER_ID]"},
+    "guarantor_name": {"mode": "mask", "placeholder": "[GUARANTOR]"},
+    "date_of_birth": {"mode": "mask", "placeholder": "[DOB]"},
+    "other_date": {"mode": "mask", "placeholder": "[DATE]"},
+    "date_of_service": {"mode": "keep"},
+    "age_over_89": {"mode": "mask", "placeholder": "[AGE_90_PLUS]"},
+    "age_89_or_below": {"mode": "keep"},
+    "contact": {"mode": "redact"},
+    "ssn": {"mode": "redact"},
+    "payment_card": {"mode": "redact"},
+    "ip_address": {"mode": "redact"},
+    "street_address": {"mode": "mask", "placeholder": "[ADDRESS]"},
+    "zip_code": {"mode": "mask", "keep_first_digits": 3}
+  }
+}

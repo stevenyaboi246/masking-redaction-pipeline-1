@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0",
+  "job_id": "job_c66b740f1f4f",
+  "completed_at": "2026-09-03T12:09:35.984311+00:00",
+  "source_sha256": "0506d1932f2b5b5cfa9bc7cf09e01d03b1f57fd565546e8aebf416d0ee38e8e7",
+  "output_sha256": "0f6ddcbdd507669d83edaf3d12103df2be32fb4e981145f2984f3d51f7475881",
+  "validation": {
+    "path": "examples/sample-deid-01.pdf",
+    "size_bytes": 647810,
+    "page_count": 5,
+    "encrypted": false,
+    "has_metadata": true,
+    "warnings": []
+  },
+  "extraction": [
+    {
+      "page": 1,
+      "engine": "tesseract",
+      "reliability": 0.9043
+    },
+    {
+      "page": 2,
+      "engine": "tesseract",
+      "reliability": 0.882
+    },
+    {
+      "page": 3,
+      "engine": "tesseract",
+      "reliability": 0.8965
+    },
+    {
+      "page": 4,
+      "engine": "tesseract",
+      "reliability": 0.9276
+    },
+    {
+      "page": 5,
+      "engine": "tesseract",
+      "reliability": 0.933
+    }
+  ],
+  "counts": {
+    "found": 19,
+    "masked": 19,
+    "redacted": 0,
+    "kept": 0
+  },
+  "spans": [
+    {
+      "entity_type": "mrn",
+      "page": 1,
+      "start": 38,
+      "end": 45,
+      "boxes": [
+        [
+          343.67999999999995,
+          16.56,
+          377.03999999999996,
+          24.0
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[MRN-1]"
+    },
+    {
+      "entity_type": "date_of_birth",
+      "page": 1,
+      "start": 52,
+      "end": 62,
+      "boxes": [
+        [
+          401.99999999999994,
+          16.56,
+          440.3999999999999,
+          22.56
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DOB]"
+    },
+    {
+      "entity_type": "mrn",
+      "page": 1,
+      "start": 68,
+      "end": 75,
+      "boxes": [
+        [
+          535.92,
+          41.04,
+          572.4,
+          48.0
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[MRN-1]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 1,
+      "start": 100,
+      "end": 110,
+      "boxes": [
+        [
+          87.36,
+          78.47999999999999,
+          136.56,
+          86.63999999999999
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 1,
+      "start": 1311,
+      "end": 1320,
+      "boxes": [
+        [
+          121.91999999999999,
+          770.4,
+          156.23999999999998,
+          776.4
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    },
+    {
+      "entity_type": "mrn",
+      "page": 2,
+      "start": 38,
+      "end": 45,
+      "boxes": [
+        [
+          343.67999999999995,
+          16.56,
+          377.03999999999996,
+          24.0
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[MRN-1]"
+    },
+    {
+      "entity_type": "date_of_birth",
+      "page": 2,
+      "start": 52,
+      "end": 62,
+      "boxes": [
+        [
+          401.99999999999994,
+          16.56,
+          440.3999999999999,
+          22.56
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DOB]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 2,
+      "start": 981,
+      "end": 990,
+      "boxes": [
+        [
+          121.91999999999999,
+          770.4,
+          156.23999999999998,
+          776.4
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    },
+    {
+      "entity_type": "mrn",
+      "page": 3,
+      "start": 38,
+      "end": 45,
+      "boxes": [
+        [
+          343.67999999999995,
+          16.56,
+          377.03999999999996,
+          24.0
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[MRN-1]"
+    },
+    {
+      "entity_type": "date_of_birth",
+      "page": 3,
+      "start": 52,
+      "end": 62,
+      "boxes": [
+        [
+          401.99999999999994,
+          16.56,
+          440.3999999999999,
+          22.56
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DOB]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 3,
+      "start": 1304,
+      "end": 1313,
+      "boxes": [
+        [
+          121.91999999999999,
+          770.4,
+          156.23999999999998,
+          776.4
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    },
+    {
+      "entity_type": "mrn",
+      "page": 4,
+      "start": 38,
+      "end": 45,
+      "boxes": [
+        [
+          343.67999999999995,
+          16.56,
+          377.03999999999996,
+          24.0
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[MRN-1]"
+    },
+    {
+      "entity_type": "date_of_birth",
+      "page": 4,
+      "start": 52,
+      "end": 62,
+      "boxes": [
+        [
+          401.99999999999994,
+          16.56,
+          440.3999999999999,
+          22.56
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DOB]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 4,
+      "start": 764,
+      "end": 774,
+      "boxes": [
+        [
+          229.67999999999998,
+          383.28,
+          287.03999999999996,
+          392.88
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 4,
+      "start": 896,
+      "end": 905,
+      "boxes": [
+        [
+          228.95999999999998,
+          459.11999999999995,
+          281.03999999999996,
+          468.71999999999997
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 4,
+      "start": 1623,
+      "end": 1632,
+      "boxes": [
+        [
+          121.91999999999999,
+          770.4,
+          156.23999999999998,
+          776.4
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    },
+    {
+      "entity_type": "mrn",
+      "page": 5,
+      "start": 38,
+      "end": 45,
+      "boxes": [
+        [
+          343.67999999999995,
+          16.56,
+          377.03999999999996,
+          24.0
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[MRN-1]"
+    },
+    {
+      "entity_type": "date_of_birth",
+      "page": 5,
+      "start": 52,
+      "end": 62,
+      "boxes": [
+        [
+          401.99999999999994,
+          16.56,
+          440.3999999999999,
+          22.56
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DOB]"
+    },
+    {
+      "entity_type": "other_date",
+      "page": 5,
+      "start": 1093,
+      "end": 1102,
+      "boxes": [
+        [
+          121.91999999999999,
+          770.4,
+          156.23999999999998,
+          776.4
+        ]
+      ],
+      "confidence": 0.99,
+      "engine": "rule",
+      "mode": "mask",
+      "replacement": "[DATE]"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "remaining_rule_spans": 0
+  }
+}

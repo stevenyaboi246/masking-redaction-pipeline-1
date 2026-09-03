@@ -1,0 +1,2 @@
+[console_scripts]
+redact-pdf = redaction_pipeline.cli:main
